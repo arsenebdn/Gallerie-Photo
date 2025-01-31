@@ -9,79 +9,58 @@
 </head>
 <body>
 
-    <!-- HEADER AVEC MENU -->
+    <!-- HEADER IMMERSIF -->
     <header>
-        <div class="logo">
-            <h1>Galerie Photo</h1>
+        <div class="header-container">
+            <h1 class="logo">📸 Arsène Gallery</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#">Filtres ⬇</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-filter="all">Toutes</a></li>
+                            <li><a href="#" data-filter="nature">Nature</a></li>
+                            <li><a href="#" data-filter="urbain">Urbain</a></li>
+                            <li><a href="#" data-filter="portrait">Portrait</a></li>
+                        </ul>
+                    </li>
+                    <li><button id="theme-toggle">🌙 Mode Sombre</button></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li class="dropdown">
-                    <a href="#">Filtres ⬇</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" data-filter="all">Toutes</a></li>
-                        <li><a href="#" data-filter="nature">Nature</a></li>
-                        <li><a href="#" data-filter="urbain">Urbain</a></li>
-                        <li><a href="#" data-filter="portrait">Portrait</a></li>
-                        <li><a href="#" data-filter="date">Par Date</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- GALERIE -->
+    <!-- GALERIE FLUIDE & IMMERSIVE -->
     <main class="gallery">
-        <div class="photo" data-theme="nature" data-date="2024-01-01">
-            <img src="IMG1.JPG" alt="Paysage de nature">
-            <div class="overlay">
-                <h2>Paysage de Nature</h2>
-                <p>Prise en janvier 2024</p>
-            </div>
-        </div>
-
-        <div class="photo" data-theme="urbain" data-date="2024-02-15">
-            <img src="IMG2.JPEG" alt="Scène urbaine">
-            <div class="overlay">
-                <h2>Scène Urbaine</h2>
-                <p>Prise en février 2024</p>
-            </div>
-        </div>
-
-        <div class="photo" data-theme="portrait" data-date="2023-12-05">
-            <img src="IMG3.JPEG" alt="Portrait">
-            <div class="overlay">
-                <h2>Portrait</h2>
-                <p>Prise en décembre 2023</p>
-            </div>
-        </div>
-
-        <div class="photo" data-theme="nature" data-date="2023-11-20">
-            <img src="IMG4.JPEG" alt="Forêt automnale">
-            <div class="overlay">
-                <h2>Forêt Automnale</h2>
-                <p>Prise en novembre 2023</p>
-            </div>
-        </div>
-
-        <div class="photo" data-theme="urbain" data-date="2023-10-10">
-            <img src="IMG5.JPEG" alt="Rue de nuit">
-            <div class="overlay">
-                <h2>Rue de Nuit</h2>
-                <p>Prise en octobre 2023</p>
-            </div>
-        </div>
+        <div class="photo" data-theme="nature"><img src="IMG1.JPG" alt="Paysage nature"></div>
+        <div class="photo" data-theme="urbain"><img src="IMG2.JPEG" alt="Scène urbaine"></div>
+        <div class="photo" data-theme="portrait"><img src="IMG3.JPEG" alt="Portrait"></div>
+        <div class="photo" data-theme="nature"><img src="IMG4.JPEG" alt="Forêt"></div>
+        <div class="photo" data-theme="urbain"><img src="IMG5.JPEG" alt="Rue de nuit"></div>
+        <div class="photo" data-theme="nature"><img src="IMG6.JPEG" alt="Montagne"></div>
+        <div class="photo" data-theme="urbain"><img src="IMG7.jpg" alt="Métro"></div>
+        <div class="photo" data-theme="portrait"><img src="IMG8.jpg" alt="Studio"></div>
+        <div class="photo" data-theme="nature"><img src="IMG9.jpg" alt="Plage"></div>
+        <div class="photo" data-theme="urbain"><img src="IMG10.jpg" alt="Skyline"></div>
+        <div class="photo" data-theme="portrait"><img src="IMG11.jpg" alt="Silhouette"></div>
+        <div class="photo" data-theme="nature"><img src="IMG12.jpg" alt="Forêt profonde"></div>
+        <div class="photo" data-theme="urbain"><img src="IMG13.jpg" alt="Pont illuminé"></div>
+        <div class="photo" data-theme="portrait"><img src="IMG14.jpg" alt="Regard perçant"></div>
+        <div class="photo" data-theme="nature"><img src="IMG15.jpg" alt="Lac paisible"></div>
     </main>
 
-    <!-- MODE PLEIN ÉCRAN (LIGHTBOX) -->
+    <!-- LIGHTBOX ULTRA IMMERSIF -->
     <div id="lightbox" class="hidden">
         <span class="close">&times;</span>
-        <img id="lightbox-img" src="" alt="">
+        <img id="lightbox-img" src="" alt="Image en plein écran">
     </div>
 
-    <!-- FOOTER -->
+    <!-- FOOTER MODERNE & MINIMALISTE -->
     <footer>
-        <p>© 2025 Arsène Bidan - Galerie Photo</p>
+        <div class="footer-container">
+            <p>© 2025 Arsène Bidan - Galerie Photo</p>
+            <p>📩 <a href="mailto:contact@arsenebidan.com">Contact</a></p>
+        </div>
     </footer>
 
 </body>
