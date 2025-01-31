@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Photo - Arsène</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- HEADER AVEC MENU -->
+    <header>
+        <div class="logo">
+            <h1>Galerie Photo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Filtres ⬇</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-filter="all">Toutes</a></li>
+                        <li><a href="#" data-filter="nature">Nature</a></li>
+                        <li><a href="#" data-filter="urbain">Urbain</a></li>
+                        <li><a href="#" data-filter="portrait">Portrait</a></li>
+                        <li><a href="#" data-filter="date">Par Date</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- GALERIE -->
+    <main class="gallery">
+        <div class="photo" data-theme="nature" data-date="2024-01-01">
+            <img src="IMG1.JPG" alt="Paysage de nature">
+            <div class="overlay">
+                <h2>Paysage de Nature</h2>
+                <p>Prise en janvier 2024</p>
+            </div>
+        </div>
+
+        <div class="photo" data-theme="urbain" data-date="2024-02-15">
+            <img src="IMG2.JPEG" alt="Scène urbaine">
+            <div class="overlay">
+                <h2>Scène Urbaine</h2>
+                <p>Prise en février 2024</p>
+            </div>
+        </div>
+
+        <div class="photo" data-theme="portrait" data-date="2023-12-05">
+            <img src="IMG3.JPEG" alt="Portrait">
+            <div class="overlay">
+                <h2>Portrait</h2>
+                <p>Prise en décembre 2023</p>
+            </div>
+        </div>
+
+        <div class="photo" data-theme="nature" data-date="2023-11-20">
+            <img src="IMG4.JPEG" alt="Forêt automnale">
+            <div class="overlay">
+                <h2>Forêt Automnale</h2>
+                <p>Prise en novembre 2023</p>
+            </div>
+        </div>
+
+        <div class="photo" data-theme="urbain" data-date="2023-10-10">
+            <img src="IMG5.JPEG" alt="Rue de nuit">
+            <div class="overlay">
+                <h2>Rue de Nuit</h2>
+                <p>Prise en octobre 2023</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- MODE PLEIN ÉCRAN (LIGHTBOX) -->
+    <div id="lightbox" class="hidden">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Arsène Bidan - Galerie Photo</p>
+    </footer>
+
+</body>
+</html>
